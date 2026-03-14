@@ -1,11 +1,12 @@
 import {link} from "react-router-dom";
+//impoterer placeholderbilde for filmer uten poster
 import Placeholder from "./assets/placeholder.png";
 
 function MovieCard({ movie }) {
-
+//lager slug av tittelen så den kan bruker i urln
   const slug = movie.Title.toLowerCase().replace(/\s+/g, "-");
 
-
+//placejhlder bilder brukes her hvis det ikke er noe bilde til apiet
   let posterUrl = movie.Poster;
   if (posterUrl === "N/A") {
     posterUrl = Placeholder;
