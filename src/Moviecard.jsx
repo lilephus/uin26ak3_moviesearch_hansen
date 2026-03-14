@@ -12,13 +12,13 @@ function MovieCard({ movie }) {
   }
 
   return (
-    <div className="movie-card">
+    <article className="movie-card">
       <Link to={`/movies/${slug}`}>
         <img src={posterUrl} alt={movie.Title} />
         <h3>{movie.Title}</h3>
         <p>{movie.Year}</p>
       </Link>
-    </div>
+    </article>
   );
 }
 
