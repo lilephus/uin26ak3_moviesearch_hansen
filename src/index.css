@@ -50,5 +50,7 @@ header h2 {
 }
 
 .search-button{
-
+padding: 12px 1cpx;
+border: 1px #ccc;
+border-radius: 0 6px 5pc 0;
 }
