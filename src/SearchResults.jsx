@@ -31,8 +31,14 @@ function SearchResults() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button type="submit">Søk</button>
+          <button type="submit" className="search-button">
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </button>
         </form>
-
       </section>
+      <MovieList movies={movies} />
     </main>
+  );
+}
+
+export default SearchResults;
