@@ -13,6 +13,7 @@ function SearchResults() {
 
   async function handleSearch(e) {
     e.preventDefault();
+    //for åt det trengs minst 3 tegn for å søke
     const results = await searchMovies(searchTerm);
     setMovies(results);
   }
