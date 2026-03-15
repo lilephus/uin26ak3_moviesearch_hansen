@@ -50,7 +50,45 @@ header h2 {
 }
 
 .search-button{
-padding: 12px 1cpx;
-border: 1px #ccc;
-border-radius: 0 6px 5pc 0;
+padding: 12px 16px;
+border: 1px solid #ccc;
+border-radius: 0 6px 6px 0;
+background-color: #111827;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+color: white;
+font-size: 14px;
+/* font-weight: 600; */
+display: flex;
+}
+
+.search-button:hover {
+  background-color: #374151;
+}
+
+
+/* grid til movie kort */
+.movie-list{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  gap: 35px;
+}
+
+.movie-card{
+  position:relative;
+  transition: transform 0.25s ease;
+  /* cursor: pointer; */
+}
+
+.movie-card:hover{
+  transform: translateY(-6px);
+}
+
+.movie-card img{
+  width: 100%;
+  /* max-width: 100%; */
+    display: block;
+  border-radius: 10px;
 }
