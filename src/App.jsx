@@ -10,9 +10,10 @@ function App() {
     <BrowserRouter>
     <main>
       <Routes>
-        <Route path="/:movie" element={<MoviePage />} />
         <Route path="/" element={<SearchResults />} />
-        {/* <Route path="/movies/:slug" element={<MoviePage />} /> */}
+        <Route path="/:movie" element={<MoviePage />} />
+        <Route path="/movies/:movie" element={<MoviePage />} />
+        {/* <Route path="/movies/:slug" element={<MoviePage />} />  */}
       </Routes>
     </main>
     </BrowserRouter>
