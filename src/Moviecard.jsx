@@ -1,4 +1,4 @@
-import {link} from "react-router-dom";
+import { Link } from "react-router-dom";
 //impoterer placeholderbilde for filmer uten poster
 import Placeholder from "./assets/Placeholder.png";
 
