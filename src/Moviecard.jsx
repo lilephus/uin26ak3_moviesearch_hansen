@@ -5,6 +5,8 @@ import Placeholder from "./assets/Placeholder.png";
 function MovieCard({ movie }) {
 //lager slug av tittelen så den kan bruker i urln
   const slug = movie.Title.toLowerCase().replace(/\s+/g, "-");
+  // const slug = movie.Title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
 
 //placejhlder bilder brukes her hvis det ikke er noe bilde til apiet
   let poster = movie.Poster;

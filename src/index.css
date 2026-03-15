@@ -38,7 +38,7 @@ header h1 {
   justify-content: center;
 }
 
-.search-from input {
+.search-form input {
   width: 320px;
   /* padding: 10px; */
   padding: 12px 17px;

@@ -11,6 +11,9 @@ function SearchResults() {
     searchMovies("james bond").then((res) => setMovies(res));
   }, []);
 
+  // async function handlea
+
+
   async function handleSearch(e) {
     e.preventDefault();
     //for åt det trengs minst 3 tegn for å søke

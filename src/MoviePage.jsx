@@ -5,6 +5,7 @@ function MoviePage() {
 
   //denne omgjør slug tilt tittel  for å kunne lage url av tittelen og vise den på siden
   const title = movie.replace(/-/g, " ");
+// const title = movie.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 
     return (
         <main>
