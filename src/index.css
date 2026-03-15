@@ -13,3 +13,39 @@ main{
   padding: 40px 20px;
   text-align: center;
 }
+
+/* header {
+  font
+  margin-bottom: 20px;
+} */
+
+header h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* seachbar */
+.search-bar {
+  /* height: 100px;
+  width: 100%; */
+  /* display: flex;
+  justify-content: center; */
+  margin-bottom: 50px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-from input {
+  width: 320px;
+  /* padding: 10px; */
+  padding: 12px 17px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+}
+
