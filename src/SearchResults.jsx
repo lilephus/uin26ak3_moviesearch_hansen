@@ -2,6 +2,16 @@ import { useState, useEffect } from "react";
 import MovieList from "./MovieList";
 import { searchMovies } from "./omdbApi";
 
-fuction SearchResults() {
+function SearchResults() {
+  const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState("");
+
+  //Når siden blir åpnet det første som kommer opp er james bond filmer
+  useEffect(() => {
+    searchMovies("James Bond").then(setMovies);
+  }, []);
+
+  function handleSearch(e) {
+    e.preventDefault();
+    searchMovies(searchTerm).then(setMovies);
+  }
