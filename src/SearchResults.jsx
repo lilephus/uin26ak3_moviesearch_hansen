@@ -21,5 +21,18 @@ function SearchResults() {
     <main>
       <header>
         <h1>Her kan du søke filmer</h1>
-        <form onSubmit={handleSearch}>
+      </header>
+
+      <section className="search-bar">
+        <form className="search-form" onSubmit={handleSearch}>
+          <input
+            type="text"
+            placeholder="Søk etter filmer..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <button type="submit">Søk</button>
+        </form>
+
+      </section>
     </main>
