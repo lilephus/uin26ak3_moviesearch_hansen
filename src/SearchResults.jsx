@@ -8,10 +8,18 @@ function SearchResults() {
 
   //Når siden blir åpnet det første som kommer opp er james bond filmer
   useEffect(() => {
-    searchMovies("James Bond").then(setMovies);
+    searchMovies("James Bond").then((res); => setMovies(res));
   }, []);
 
-  function handleSearch(e) {
+  async function handleSearch(e) {
     e.preventDefault();
-    searchMovies(searchTerm).then(setMovies);
+    const results = await searchMovies(searchTerm);
+    setMovies(results);
   }
+
+  return (
+    <main>
+      <header>
+        <h1>Her kan du søke filmer</h1>
+        <form onSubmit={handleSearch}>
+    </main>
